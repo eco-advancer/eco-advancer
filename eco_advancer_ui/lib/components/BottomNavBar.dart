@@ -25,26 +25,36 @@ class BottomNavBar extends StatelessWidget {
           IconButton(
             color: kIconColor,
             icon: Icon(Icons.home),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/');
+            },
           ),
           IconButton(
             color: kIconColor,
             icon: Icon(Icons.leaderboard),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/statistics');
+            },
           ),
           IconButton(
             color: kIconColor,
             icon: Icon(Icons.camera),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/scan');
+              },
           ),
           IconButton(
             color: kIconColor,
             icon: Icon(Icons.leaderboard),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/statistics');
+              },
           ),
           IconButton(
             icon: Icon(Icons.person),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/profile');
+              },
           ),
         ],
       ),
